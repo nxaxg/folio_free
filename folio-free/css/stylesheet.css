@@ -1,0 +1,457 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'bebas_neue';
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-header{
+    background: url(../img/header-back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 500px;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+}
+
+.main-header:before{
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+
+.main-header .row{
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+}
+
+.red{
+    background-color: red;
+    height: 100px;
+}
+
+.main-title{
+    font-family: 'bebas_neuebold';
+    color: white;
+    text-transform: uppercase;
+    font-size: 6em;
+    top: 80px;
+    position: relative;
+}
+
+.main-subtitle{
+    color: white;
+    top: 50px;
+    position: relative;
+}
+
+header{
+    background-color: #252222;
+}
+
+.logo{
+    font-family: 'bebas_neuebold';
+    color: white;
+    font-size: 2em;
+}
+.main-nav{
+    padding: 10px 0;
+}
+
+.main-nav ul li{
+    margin-top: 10px;
+    margin-right: 15px;
+    padding: 20px 0;
+}
+
+.main-nav a{
+    color: white;
+    font-size: 1.5em;
+    padding:10px 5px;
+}
+
+.main-nav a:hover{
+    color: #65ba99;
+    text-decoration: none;
+    border-bottom: 1px solid #65ba99;
+}
+
+.icons-nav{
+    padding: 20px 0;
+    margin: 10px 0;
+}
+
+.icons-nav ul{
+    width: 100%;
+}
+
+.icons-nav li{
+    width: 19%;
+    float: left;
+    margin-right:2%;
+    padding: 2%;
+    text-align: center;
+    font-size: 1.5em;
+    border-radius: 100%;
+    border: 1px solid white;
+    background-color: white;
+}
+
+.icons-nav li:hover{
+    background-color: #65ba99;
+    border: 1px solid #65ba99;
+}
+
+.icons-nav .iconav{
+    color: #252222;
+}
+
+.icons-nav li:last-child{
+    margin-right: 0;
+}
+
+/*content*/
+
+.content{
+    padding: 30px 0;
+}
+
+
+/*portfolio*/
+
+#portfolio{
+    background-color: #65ba99;
+    overflow: hidden;
+}
+
+.content-title{
+    text-transform: uppercase;
+    color: white;
+    font-size: 3em;
+    margin: 0;
+    font-family: 'bebas_neuebold';
+}
+
+.content-subtitle{
+    color: white;
+    text-transform: uppercase;
+    font-size: 2em;
+    margin: 0;
+}
+
+.img-container{
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.img-container .project{
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.img-container figure img{
+    width: 100%;
+}
+
+.project figcaption{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(101, 186, 153, 0.5);
+    color: white;
+    font-size: 2em;
+    display: none;
+}
+
+.project:hover figcaption{
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.project figcaption .fg-icon{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.project figcaption .fg-icon:hover{
+    font-size: 1.2em;
+}
+
+/*col-lg-6*/
+.project.col-lg-6 figcaption{
+    padding: 40% 0;
+}
+
+.project.col-lg-6 figcaption .fg2{
+    width: 80%;
+    margin: 5% 10%;
+    overflow: hidden;
+}
+
+.project.col-lg-6 figcaption .fg2 .fg-icon{
+    width: 25%;
+    float: left;
+}
+
+/*col-lg-3*/
+.project.col-lg-3 figcaption{
+    padding: 50% 0;
+}
+
+.project.col-lg-3 figcaption .fg2{
+    width: 80%;
+    margin: 5% 10%;
+    overflow: hidden;
+}
+
+.project.col-lg-3 figcaption .fg2 .fg-icon{
+    width: 25%;
+    float: left;
+}
+
+/*testimonial*/
+
+#testimonial{
+    position: relative;
+    padding: 50px 0;
+    background:  url('../img/testimonial-back.jpg');
+    background-size: cover;
+    height: auto;
+    background-repeat: no-repeat;
+}
+
+.testimonial-text,
+.testimonial-who{
+    color: white;
+    font-family: 'bebas_neuebold';
+}
+
+.testimonial-who{
+    font-size: 2em;
+}
+
+/**/
+
+#news{
+    background-color: #d3d3d3;
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+#news .content-title{
+    color: black;
+}
+
+.news-left{
+    padding: 20px 0;
+}
+
+.news-date p{
+    background-color: #65ba99;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+}
+
+.news-tags .nt-1{
+    color: #65ba99;
+}
+
+.news-tags .nt-2{
+    color: #e2534b;
+}
+
+.news-r2 .nt-3{
+    font-size: 1.6em;  
+    color: #2c8864;
+}
+
+.news-r4 p{
+    font-family: 'Helvetica';
+}
+
+.news-r3{
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.news-r3 img{
+    width: 100%;
+}
+
+.news-r5{
+    color: #e2534b;
+}
+
+.news-r5 p{
+    text-align: right;
+    font-size: 1.4em;
+}
+
+.news-r5 span{
+    padding: 5px 0;
+}
+
+
+.news-r7{
+    overflow: hidden;
+}
+.news-r7 .label{
+    font-size: 1em;
+    font-family: 'Helvetica';
+    font-weight: lighter;
+    border-radius: 0;
+    background-color: #65ba99;
+    cursor: pointer;
+    margin: 10px 5px;
+}
+
+.news-r7 .label:hover{
+    background-color: #e2534b;
+}
+
+.news-r8 img{
+    width: 100%;
+}
+
+.news-r8 p{
+    font-family: 'Helvetica';
+}
+
+.news-r8 .row{
+    margin: 10px 0;
+}
+
+/*sponsor*/
+
+#sponsor{
+    background-color: #c3c3c3;
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+#sponsor img{
+    width: 90%;
+}
+
+/*bio*/
+#bio{
+    background-color: #e2534b;
+    overflow: hidden;
+}
+
+.bio-r3{
+    padding: 20px 0;
+}
+
+.bio-r4 ul{
+    width: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.bio-r4 li{
+    width: 23%;
+    padding: 10px;
+    float: left;
+    margin-right: 2.6%;
+    background-color: white;
+}
+
+.bio-r4 li:last-child{
+    margin-right: 0;
+}
+
+.bio-r4 .iconav{
+    color: #e2534b;
+    font-size: 2em;
+}
+
+.bio-r4 li:hover{
+    background-color: #65ba99;
+}
+
+.bio-r6,.bio-r5{
+    color: white;
+}
+
+.bio-r6 p{
+    font-family: 'Helvetica';
+    font-size: 1em;
+}
+
+/*footer*/
+
+footer{
+    overflow: hidden;
+    background: url(../img/contact-back.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+}
+
+footer .content-title{
+    color: black;
+}
+
+footer .contact-title{
+    font-size: 3em;
+    color: white;
+    font-family: 'bebas_neuebold';
+    padding: 5px 0;
+}
+
+footer .cont-r3 .container{
+    border: 5px solid white;
+    padding: 0;
+    
+}
+
+footer .contact-stitle{
+    font-size: 2em;
+    color: white;
+    font-family: 'bebas_neuebold';
+    padding: 5px 0;
+}
+
+footer .cont-footer{
+    padding: 20px 0 0 0;
+}
+
+footer .cont-footer p{
+    font-family: 'Helvetica';
+    color: white;
+    font-weight: bold;
+}
+
+footer .cont-footer a{
+    color: white;
+}
+
+footer .cont-footer a:hover{
+    color: black;
+}
